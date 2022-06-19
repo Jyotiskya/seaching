@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+   
+    *****************
+    DONE BY:-   LAV KUSH PRASAD
+    E-MAIL:-    lavkushprasad1976@gmail.com
+    *****************
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate">Generate New Array!</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button style="margin-right: 0px;">Heap</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <font color="blue">Default Color :- BLUE</font> 
+            <br>
+            <br>
+            <font color="#e6e600">Compare Color :- YELLOW</font> 
+            <br>
+            <br>
+            <font color="red">Swapping Color :- RED</font> 
+            <br>
+            <br>
+            <font color="green">Sorted Color :- GREEN</font> 
+            <br>
+            <br>
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+              <font color="magenta">Click here to know more about Sorting Algorithms :-</font> 
+                <br> 
+                <br>
+                
+                <a href="https://www.geeksforgeeks.org/bubble-sort/" target="_blank">Bubble</a> 
+                <br> 
+                <br> 
+               
+                <a href="https://www.geeksforgeeks.org/selection-sort/" target="_blank">Selection</a> 
+                <br> 
+                <br> 
+                <a href="https://www.geeksforgeeks.org/insertion-sort/" target="_blank">Insertion</a> 
+                <br> 
+                <br> 
+                <a href="https://www.geeksforgeeks.org/merge-sort/" target="_blank">Merge</a> 
+                <br> 
+                <br> 
+                <a href="https://www.geeksforgeeks.org/quick-sort/" target="_blank">Quick</a> 
+                <br> 
+                <br> 
+                <a href="https://www.geeksforgeeks.org/heap-sort/" target="_blank">Heap</a> 
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+
+</html>
